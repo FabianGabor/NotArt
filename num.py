@@ -28,7 +28,7 @@ codel_count = 0
 # R   = 100
 # G   = 010
 # B   = 001
-color_format = "000"
+color_format = "100"
 
 # Print coordinates
 print_coords = 0
