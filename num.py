@@ -28,13 +28,13 @@ codel_count = 0
 # R   = 100
 # G   = 010
 # B   = 001
-color_format = "111"
+color_format = "000"
 
 # Print coordinates
 print_coords = 0
 
 def rgb2hex(r, g, b):
-    return '#{:02x}{:02x}{:02x}'.format(r, g, b)
+    return '{:02x}{:02x}{:02x}'.format(r, g, b)
 
 
 def print_color_format(cf):
