@@ -31,22 +31,22 @@ codel_count = 0
 # R   = 100
 # G   = 010
 # B   = 001
-color_format = "100"
+color_format = "111"
 
 # Print coordinates
 print_coords = 0
 
 def print_color_format(cf):
 	if cf == "000":
-		print("\t", rgb2hex(r, g, b))
+		print(rgb2hex(r, g, b))
 	if cf == "111":
-		print("\t(%3s,%3s,%3s)" % (str(r), str(g), str(b)))
+		print("(%3s,%3s,%3s)" % (str(r), str(g), str(b)))
 	if cf == "100":
-		print("\t%3s" % (str(r)))
+		print("%3s" % (str(r)))
 	if cf == "010":
-		print("\t%3s" % (str(g)))
+		print("%3s" % (str(g)))
 	if cf == "001":
-		print("\t%3s" % (str(b)))
+		print("%3s" % (str(b)))
 
 
 # Get color from the middle of the codel:
