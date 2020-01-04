@@ -10,11 +10,6 @@ im = Image.open("not_art.png")
 # Convert our image to RGB
 rgb_im = im.convert('RGB')
 
-
-def rgb2hex(r, g, b):
-    return '#{:02x}{:02x}{:02x}'.format(r, g, b)
-
-
 # Use the .size object to retrieve a tuple contain (width,height) of the image
 # and assign them to width and height variables
 width = rgb_im.size[0]
@@ -37,6 +32,9 @@ color_format = "111"
 
 # Print coordinates
 print_coords = 0
+
+def rgb2hex(r, g, b):
+    return '#{:02x}{:02x}{:02x}'.format(r, g, b)
 
 
 def print_color_format(cf):
